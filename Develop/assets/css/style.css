@@ -8,23 +8,31 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* Replace header tag instead .header class */
+header {
     padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
+/* Adding new class for Nav Bar List Items to avoid changes on the structure when viewport moves  */
+.box {
+    width: 15em;
+}
+/* Replacing Nav Bar Tag instead another DIV  */
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +40,12 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+header nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+/* Replace header tag instead .header class  */
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -75,7 +84,7 @@ p {
     margin-left: 20px;
 }
 
-.benefits {
+.benefit {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -188,13 +197,14 @@ p {
     font-size: 36px;
 }
 
-.footer {
+/* Replace footer tag instead .footer class  */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
